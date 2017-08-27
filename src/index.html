@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculatr</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="components/materialize/dist/css/materialize.min.css"
+          media="screen,projection"/>
+</head>
+<body style="overflow: hidden">
+<div style="-webkit-app-region: drag; width: 505px; height: 40px; background-color: gray; opacity: 0.3; margin-top: -10px; margin-left: -10px"></div>
+<div id="calc" style="width: 100%">
+    <h6 id="eq" style="color: lightgray; position: absolute; top: 50px; right: 10px"></h6>
+</div>
+<div id="sum" style="width: 100%; height: 100px" onclick="copy()">
+    <h1 id="sumText" style="color: white; position: absolute; top: 40px; right: 10px"></h1>
+</div>
+<hr/>
+<div id="buttons" style="width: 100%; height: 45px">
+    <a style="margin-left: 5%; top: 2.5px" class="btn-floating waves-effect waves-light red centerButton"><i
+            class="material-icons" onclick="reset()">sync</i></a>
+    <a style="margin-left: 5%; top: 2.5px" class="btn-floating waves-effect waves-light green centerButton"><i
+            class="material-icons" onclick="addOperator('+')">add</i></a>
+    <a style="margin-left: 5%; top: 2.5px" class="btn-floating waves-effect waves-light green centerButton"><i
+            class="material-icons" onclick="addOperator('-')">remove</i></a>
+    <a style="margin-left: 5%; top: 2.5px" class="btn-floating waves-effect waves-light green centerButton"
+       onclick="addOperator('/')"><i>/</i></a>
+    <a style="margin-left: 5%; top: 2.5px" class="btn-floating waves-effect waves-light green centerButton"
+       onclick="addOperator('*')"><i>*</i></a>
+</div>
+<hr/>
+<div id="79" style="width: 100%; height: 50px">
+    <a style="width: 100px; top: 2.5px; text-align: center" class="btn-floating waves-effect waves-light green"
+       onclick="addNumber(7)"><i>7</i></a>
+    <a style="margin-left: -2px; width: 100px; top: 2.5px; text-align: center"
+       class="btn-floating waves-effect waves-light green" onclick="addNumber(8)"><i>8</i></a>
+    <a style="margin-left: -4px; width: 100px; top: 2.5px; text-align: center"
+       class="btn-floating waves-effect waves-light green" onclick="addNumber(9)"><i>9</i></a>
+</div>
+<hr/>
+<div id="46" style="width: 100%; height: 50px">
+    <a style="width: 100px; top: 2.5px; text-align: center" class="btn-floating waves-effect waves-light green"
+       onclick="addNumber(4)"><i>4</i></a>
+    <a style="margin-left: -2px; width: 100px; top: 2.5px; text-align: center"
+       class="btn-floating waves-effect waves-light green" onclick="addNumber(5)"><i>5</i></a>
+    <a style="margin-left: -4px; width: 100px; top: 2.5px; text-align: center"
+       class="btn-floating waves-effect waves-light green" onclick="addNumber(6)"><i>6</i></a>
+</div>
+<hr/>
+<div id="13" style="width: 100%; height: 50px">
+    <a style="width: 100px; top: 2.5px; text-align: center" class="btn-floating waves-effect waves-light green"
+       onclick="addNumber(1)"><i>1</i></a>
+    <a style="margin-left: -2px; width: 100px; top: 2.5px; text-align: center"
+       class="btn-floating waves-effect waves-light green" onclick="addNumber(2)"><i>2</i></a>
+    <a style="margin-left: -4px; width: 100px; top: 2.5px; text-align: center"
+       class="btn-floating waves-effect waves-light green" onclick="addNumber(3)"><i>3</i></a>
+</div>
+<hr/>
+<div id="0" style="width: 100%; height: 50px">
+    <a style="width: 100px; top: 2.5px; text-align: center" class="btn-floating waves-effect waves-light green"
+       onclick="addNumber('-')"><i>-</i></a>
+    <a style="margin-left: -2px; width: 100px; top: 2.5px; text-align: center"
+       class="btn-floating waves-effect waves-light green" onclick="addNumber(0)"><i>0</i></a>
+    <a style="margin-left: -4px; width: 100px; top: 2.5px; text-align: center"
+       class="btn-floating waves-effect waves-light green" onclick="addNumber('.')"><i>.</i></a>
+</div>
+
+<a style="width: 100%; top: 2.5px; text-align: center" class="btn-floating waves-effect waves-light green" onclick="solve()"><i>ENTER</i></a>
+
+
+<script>if (typeof module === 'object') {
+    window.module = module;
+    module = undefined;
+}</script>
+<script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="components/materialize/dist/js/materialize.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

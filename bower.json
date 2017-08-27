@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "description": "Simple Electron Calculator",
+  "main": "src/main.js",
+  "authors": [
+    "Tom Sacher <tomnik104@yahoo.de>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.100.2",
+    "jquery": "^3.2.1"
+  }
+}

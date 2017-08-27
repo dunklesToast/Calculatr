@@ -1,0 +1,24 @@
+{
+  "name": "calculator",
+  "version": "1.0.2",
+  "description": "Simple Electron Calculator",
+  "main": "src/main.js",
+  "author": "Tom Sacher <tomnik104@yahoo.de>",
+  "license": "ISC",
+  "build": {
+    "appId": "de.dunklesToast.calculatr",
+    "mac": {
+      "category": "de.dunklesToast.calculatr.calc"
+    },
+    "copyright": "Developed by Tom Sacher - 2017",
+    "productName": "Calculatr",
+    "directories": {
+      "buildResources": "build"
+    }
+
+  },
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  }
+}
